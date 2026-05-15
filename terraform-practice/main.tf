@@ -1,21 +1,8 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = "ap-northeast-1"
-}
-
 resource "aws_instance" "web" {
-  ami           = "ami-12345678"
-  instance_type = "t3.small"
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
   tags = {
-    Name = "practice-web"
+    Name = var.instance_name
   }
 }
