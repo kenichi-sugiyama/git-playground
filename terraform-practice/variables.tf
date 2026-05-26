@@ -15,3 +15,9 @@ variable "instance_name" {
   description = "Name tag for the EC2 instance"
   default     = "practice-web"
 }
+
+variable "owner" {
+  type        = string
+  description = "Owner email tag"
+  default     = "kenichi.sugiyama@persol.co.jp"
+}
