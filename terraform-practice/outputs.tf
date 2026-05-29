@@ -17,3 +17,8 @@ output "root_volume_size" {
   value       = var.root_volume_size
   description = "Root EBS volume size"
 }
+
+output "disable_api_termination" {
+  value       = var.disable_api_termination
+  description = "Whether termination protection is enabled"
+}
