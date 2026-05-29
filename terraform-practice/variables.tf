@@ -34,3 +34,9 @@ variable "environment" {
   description = "Environment tag"
   default     = "test"
 }
+
+variable "root_volume_size" {
+  type        = number
+  description = "Root EBS volume size in GiB"
+  default     = 8
+}
