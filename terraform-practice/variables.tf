@@ -40,3 +40,10 @@ variable "root_volume_size" {
   description = "Root EBS volume size in GiB"
   default     = 8
 }
+
+variable "disable_api_termination" {
+  type        = bool
+  description = "Whether termination protection is enabled"
+  default     = true
+}
+
